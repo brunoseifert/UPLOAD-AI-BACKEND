@@ -1,10 +1,10 @@
 # @name get-prompts
-GET http://localhost:3333/prompts
+GET http://upload-api-amber.vercel.app/prompts
 
 
 ### 
 # @name upload
-POST http://localhost:3333/videos
+POST http://upload-api-amber.vercel.app/videos
 Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
 
 ------WebKitFormBoundary7MA4YWxkTrZu0gW
@@ -17,7 +17,7 @@ Content-Type: audio/mpeg
 ###
 
 # @name create-transcription
-POST http://localhost:3333/videos/2d145e6a-8dbc-48eb-a331-5e7290fb734a/transcription
+POST http://upload-api-amber.vercel.app/videos/2d145e6a-8dbc-48eb-a331-5e7290fb734a/transcription
 Content-Type: application/json
 
 {
@@ -27,7 +27,7 @@ Content-Type: application/json
 ###
 
 # @name generate-ai-completion
-POST http://localhost:3333/ai/complete
+POST http://upload-api-amber.vercel.app/ai/complete
 Content-Type: application/json
 
 {
