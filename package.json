@@ -8,7 +8,7 @@
   },
   "scripts": {
     "dev": "tsx src/server.ts",
-    "build": "tsup src",
+    "build": "vite build",
     "start": "node dist/server.js"
   },
   "keywords": [],
